@@ -11,7 +11,7 @@ tags: [计算机额系统结构]
 
 ### Domain
 
-Domain是指某个对象及其操作的集合{% raw %}$\{Object,\ Operations\}${% endraw %}。Domain switch则是字面意思，切换当前可以操作的对象，比如切换地址空间则是进行一次Domain switch。
+Domain是指某个对象及其操作的集合{% raw %}{% comment %}$\{Object,\ Operations\}${% endcomment %}{% endraw %}。Domain switch则是字面意思，切换当前可以操作的对象，比如切换地址空间则是进行一次Domain switch。
 
 ### Endpoint
 
@@ -48,6 +48,8 @@ $relay\ memory\ segment$的缩写，直译为中继段。$relay-seg$是论文提
 $seg-reg$和$seg-mask$是$relay-seg$的一部分。$seg-reg$是一个寄存器，用于翻译$relay-seg$。它由虚地址基址(VA Base)，物理地址基址(PA Base)，长度(Length)和访问权限(Permission)组成。
 
 ![seg-reg](/assets/img/posts/2021-08-27_XPC_Architectural_Support_for_Secure_and_Efficient_Cross/seg-reg.png)
+
+*_seg-reg_*
 
 $seg-mask$
 
