@@ -11,7 +11,7 @@ tags: [计算机额系统结构]
 
 ### Domain
 
-Domain是指某个对象及其操作的集合{% raw %}{% comment %}$\{Object,\ Operations\}${% endcomment %}{% endraw %}。Domain switch则是字面意思，切换当前可以操作的对象，比如切换地址空间则是进行一次Domain switch。
+Domain是指某个对象及其操作的集合$\\{Object,\ Operations\\}$。Domain switch则是字面意思，切换当前可以操作的对象，比如切换地址空间则是进行一次Domain switch。
 
 ### Endpoint
 
@@ -33,7 +33,7 @@ $xcall\ capability$的缩写，是一个bitmap，其中第i个bit标志着当前
 
 ### $xcall$
 
-$xcall$是论文提出的一个原语，用法是$xcall\  \#reg$，$\#reg$是一个标号，意思是进入第$\#reg$个$x-entry$继续执行，可以理解为是一个函数调用。
+$xcall$是论文提出的一个原语，用法是$xcall\quad\#reg$，$\#reg$是一个标号，意思是进入第$\#reg$个$x-entry$继续执行，可以理解为是一个函数调用。
 
 ### $xret$
 
