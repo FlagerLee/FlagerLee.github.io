@@ -99,6 +99,8 @@ paginate: 10
 
 # ------------ The following options are not recommended to be modified ------------------
 
+markdown: kramdown
+
 kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:   # Rouge Options › https://github.com/jneen/rouge#full-options
