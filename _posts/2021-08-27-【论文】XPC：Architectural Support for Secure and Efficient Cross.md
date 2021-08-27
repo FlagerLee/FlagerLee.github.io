@@ -1,6 +1,5 @@
 ---
-title: 【论文】XPC: Architectural Support for Secure and Efficient Cross
-Process Call
+title: 【论文】XPC: Architectural Support for Secure and Efficient Cross Process Call
 date: 2021-08-27 17:36:00 +/-0800
 author: flagerlee
 excerpt: 论文阅读
