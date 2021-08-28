@@ -37,7 +37,7 @@ $xcall\ capability$的缩写，是一个bitmap，其中第i个bit标志着当前
 
 ### $xcall$
 
-$xcall$是论文提出的一个原语，用法是$xcall\\ \#reg$，$\#reg$是一个标号，意思是进入第$\#reg$个$x-entry$继续执行，可以理解为是一个函数调用。
+$xcall$是论文提出的一个原语，用法是$xcall\quad \#reg$，$\#reg$是一个标号，意思是进入第$\#reg$个$x-entry$继续执行，可以理解为是一个函数调用。
 
 ### $xret$
 
