@@ -73,10 +73,10 @@ theme_mode: # [light | dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn:
+img_cdn: https://cdn.v2ex.com/gravatar
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: https://gravatar.com/avatar/eb39ac04bf839bf51b751f7186aa4748de9aa9020c62eaccb4959a2c46d22b96
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
