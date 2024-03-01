@@ -24,4 +24,4 @@ SDDMM运算需要一次稠密矩阵计算，一次稀疏矩阵计算，但通过
 
 Mosaic是一个TACO的扩展，它能将稀疏张量代数表达式编译成“编译器自动生成代码”和“外部函数调用”的混合代码，并基于TACO的调度框架新增了一系列调度指令。其基本流程如下图所示：
 
-![Mosaic workflow](assets/img/2024-02-28-“Mosaic: An Interoperable Compiler for Tensor Algebra”-1.png)
+![Mosaic workflow](/assets/img/2024-02-28-“Mosaic:%20An%20Interoperable%20Compiler%20for%20Tensor%20Algebra”-1.png)
