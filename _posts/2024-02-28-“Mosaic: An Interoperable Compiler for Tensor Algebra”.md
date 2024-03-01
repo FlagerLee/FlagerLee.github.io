@@ -1,7 +1,7 @@
 ---
 title: "Mosaic: An Interoperable Compiler for Tensor Algebra"
 date: 2024-02-28 11:20:00 +0800
-categories: [论文, PLDI, 2023]
+categories: [论文, PLDI, '2023']
 tags: [tensor, compilation, dsl]     # TAG names should always be lowercase
 math: true
 ---
