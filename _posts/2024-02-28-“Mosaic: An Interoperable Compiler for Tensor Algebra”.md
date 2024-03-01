@@ -97,3 +97,13 @@ External Function Interface本质上是一个C++类，用于提供外部函数�
 搜索中得到的映射需要满足约束条件。Mosaic将会生成一个Z3 solver的查询来验证映射是否正确，但是精确验证将会导致潜在的tiling机会被忽视。为了探寻更多优化空间，Mosaic放宽了**索引变量大小必须等于索引维度大小**的限制，改为**索引变量大小必须小于等于索引维度大小**。因此，如果验证结果是正确的，Mosaic会搜索tiling机会来进行优化。
 
 ### Code Generation
+
+代码生成部分就是各种函数调用以及它们的预处理和后处理。而没有函数调用的运算则会调用TACO自带的代码生成工具进行代码生成。
+
+### Evaluation
+
+TODO
+
+### Conclusion
+
+TODO
