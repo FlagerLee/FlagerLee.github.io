@@ -26,7 +26,7 @@ Mosaic是一个TACO的扩展，它能将稀疏张量代数表达式编译成“�
 
 ![Mosaic workflow](/assets/img/2024-02-28-“Mosaic:%20An%20Interoperable%20Compiler%20for%20Tensor%20Algebra”-1.png)
 
-首先，Mosaic需要能够调用外部库函数，这要求不同的库函数需要向Mosaic提供统一的接口，因此作者实现了称为*External Function Interface*的DSL，用于描述不同的库函数。其次，TACO使用[tensor index notation](http://tensor-compiler.org/docs/pycomputations.html)来描述张量计算，而Mosaic使用tensor index notation和一种形式化语言\[[Chou et al. 2018](https://doi.org/10.1145/3276493)\]描述稀疏张量代数表达式输入。最后，作者在TACO的调度框架上集成了新的调度指令让生成结果更高效。
+首先，Mosaic需要能够调用外部库函数，这要求不同的库函数需要向Mosaic提供统一的接口，因此作者实现了称为*External Function Interface*的DSL，用于描述不同的库函数。其次，TACO使用tensor index notation(http://tensor-compiler.org/docs/pycomputations.html，由于是http而不是https所以jekyll不生成超链接...)来描述张量计算，而Mosaic使用tensor index notation和一种形式化语言\[[Chou et al. 2018](https://doi.org/10.1145/3276493)\]描述稀疏张量代数表达式输入。最后，作者在TACO的调度框架上集成了新的调度指令让生成结果更高效。
 
 ## Implementation
 
