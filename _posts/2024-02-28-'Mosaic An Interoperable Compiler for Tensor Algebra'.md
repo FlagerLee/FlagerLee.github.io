@@ -24,7 +24,7 @@ SDDMM运算需要一次稠密矩阵计算，一次稀疏矩阵计算，但通过
 
 Mosaic是一个TACO的扩展，它能将稀疏张量代数表达式编译成“编译器自动生成代码”和“外部函数调用”的混合代码，并基于TACO的调度框架新增了一系列调度指令。其基本流程如下图所示：
 
-![Mosaic workflow](/assets/img/2024-02-28-“Mosaic:%20An%20Interoperable%20Compiler%20for%20Tensor%20Algebra”-1.png)
+![Mosaic workflow](/assets/img/2024-02-28-'Mosaic%20An%20Interoperable%20Compiler%20for%20Tensor%20Algebra'/1.png)
 
 首先，Mosaic需要能够调用外部库函数，这要求不同的库函数需要向Mosaic提供统一的接口，因此作者实现了称为*External Function Interface*的DSL，用于描述不同的库函数。其次，TACO使用tensor index notation(http://tensor-compiler.org/docs/pycomputations.html，由于是http而不是https所以jekyll不生成超链接...)来描述张量计算，而Mosaic使用tensor index notation和一种形式化语言\[[Chou et al. 2018](https://doi.org/10.1145/3276493)\]描述稀疏张量代数表达式输入。最后，作者在TACO的调度框架上集成了新的调度指令让生成结果更高效。
 
@@ -42,7 +42,7 @@ External Function Interface本质上是一个C++类，用于提供外部函数�
 * Build flags(#Line 19)
 
 样例如下图所示：
-![Sample external function interface](/assets/img/2024-02-28-“Mosaic:%20An%20Interoperable%20Compiler%20for%20Tensor%20Algebra”-2.png)
+![Sample external function interface](/assets/img/2024-02-28-'Mosaic%20An%20Interoperable%20Compiler%20for%20Tensor%20Algebra'/2.png)
 
 #### Calling convention
 
@@ -55,7 +55,7 @@ External Function Interface本质上是一个C++类，用于提供外部函数�
 * Checker function：Capability面对某些约束仍无法表示，因此Mosaic提供了checker function。Checker function是由用户编写的C++函数，它接受一段tensor index notation代码并返回一个boolean值来表示该表达式当前是否能使用该函数进行计算——比如当硬件正在占用时，该函数返回false。相应地，该函数的开销远大于Capability language。
 * Tensor Properties：针对输入的约束。许多函数仅接受特定形状的张量输入。Mosaic同样使用Capability language对张量属性进行定义。
 
-![Capability language](/assets/img/2024-02-28-“Mosaic:%20An%20Interoperable%20Compiler%20for%20Tensor%20Algebra”-3.png)
+![Capability language](/assets/img/2024-02-28-'Mosaic%20An%20Interoperable%20Compiler%20for%20Tensor%20Algebra'/3.png)
 
 除此之外，张量还可以注释属性(property)，比如该张量是Hermitian matrix，是否是正定的等等，由此可以使用更精细优化的函数。
 
@@ -73,7 +73,7 @@ External Function Interface本质上是一个C++类，用于提供外部函数�
 
 除了手动绑定，Mosaic还支持输入表达式后自动绑定。
 
-![Automated search for bindings](/assets/img/2024-02-28-“Mosaic:%20An%20Interoperable%20Compiler%20for%20Tensor%20Algebra”-4.png)
+![Automated search for bindings](/assets/img/2024-02-28-'Mosaic%20An%20Interoperable%20Compiler%20for%20Tensor%20Algebra'/4.png)
 
 自动绑定分为五步完成：
 1. 剔除输入输出不符合要求的外部函数
